@@ -1,0 +1,9 @@
+.Content-container{
+    width: 100%;
+    position: relative;
+    background: white;
+    height: fit-content;
+}
+.progress{
+    padding: 0px;
+}
