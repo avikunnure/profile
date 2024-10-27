@@ -1,0 +1,149 @@
+{
+    "SilderMain":[
+        {
+            "id":1,
+            "Name":"Welcome",
+            "Image":"slide1.jpg",
+            "SliderText":"Welcome to my digital domain! 🌟",
+            "Descriptions":"Crafting Digital Masterpieces with .NET Excellence Dive into a realm where technology meets creativity. Explore innovative solutions that transform ideas into powerful digital experiences. Join me on a journey of exceptional craftsmanship and seamless user experiences."
+        },
+        {
+            "id":2,
+            "Image":"slide2.jpg",
+            "Name":"Stunning Web Design",
+            "SliderText":"Stunning Web Design",
+            "Descriptions":"Blending Aesthetics with Functionality for a Seamless User Experience Experience the art of web design that captivates and engages. Each project is meticulously crafted to balance stunning visuals with intuitive navigation, ensuring your users enjoy a delightful and effortless journey."
+        },
+        {
+            "id":3,
+            "Image":"slide3.jpg",
+            "Name":"Dynamic Web Development",
+            "SliderText":"Dynamic Web Development",
+            "Descriptions":"Transforming Ideas into Robust, Scalable Web Solutions Witness the power of cutting-edge web development. From concept to launch, I bring your visions to life with robust and scalable solutions, ensuring your online presence is both powerful and dependable."
+        },
+        {
+            "id":4,
+            "Image":"slide4.jpg",
+            "Name":"Custom Software Solutions",
+            "SliderText":"Custom Software Solutions",
+            "Descriptions":"Tailor-Made Applications to Drive Your Business Forward Unlock the potential of bespoke software. I specialize in creating custom applications tailored to your unique needs, enhancing productivity and streamlining operations to give your business a competitive edge."
+        }
+    ],
+    "Address":{
+        "AddressLine":"Kolhapur",
+        "AddressLine2":"",
+        "MobileNo":"+91 90218 53892",
+        "EmailId":"kunnureavinash@gmail.com"
+    },
+    "Services":[
+        {
+            "id":1,
+            "Name":"Web Design",
+            "Descriptions":"Craft visually stunning and user-friendly websites. Our web design services blend aesthetics with functionality, ensuring that your site not only looks great but also provides a seamless user experience across all devices.",
+            "IconClass":"bi bi-cash-stack"
+        },
+        {
+            "id":2,
+            "Name":"Web Development",
+            "Descriptions":"Transform your ideas into reality with our comprehensive web development services. From static websites to dynamic web applications, we utilize the latest technologies to build robust, scalable, and secure online solutions tailored to your needs.",
+            "IconClass":"bi bi-calendar4-week"
+        },
+        {
+            "id":3,
+            "Name":"Custom Software Development",
+            "Descriptions":"Create software solutions that are as unique as your business. Our custom software development services focus on building tailor-made applications that enhance productivity and streamline operations, providing you with a competitive edge.",
+            "IconClass":"bi bi-chat-text"
+        },
+        {
+            "id":4,
+            "Name":"Application Development",
+            "Descriptions":"Deliver powerful applications across platforms. Whether it’s mobile, desktop, or web, our application development services prioritize performance, security, and a user-centric approach to ensure your app stands out.",
+            "IconClass":"bi bi-credit-card-2-front"
+        },
+        {
+            "id":5,
+            "Name":"Information Management",
+            "Descriptions":"Optimize your data processes with our information management solutions. We help you manage, store, and analyze your data efficiently, empowering you to make informed decisions and drive business growth.",
+            "IconClass":"bi bi-globe"
+        },
+        {
+            "id":6,
+            "Name":"Cloud Application Development",
+            "Descriptions":"Harness the power of the cloud for your business applications. Our cloud application development services offer scalable, reliable, and cost-effective solutions, whether you’re migrating existing applications to the cloud or creating new cloud-native apps.",
+            "IconClass":"bi bi-clock"
+        }
+    ],
+    "Aboutus":{
+        "Title":"",
+        "Descriptions":"A seasoned .NET Developer with a knack for creating powerful digital solutions that push boundaries. With years of experience in web design, web development, custom software, application development, information management, and cloud computing, I bring a unique fusion of creativity and technical prowess to every project I undertake.",
+        "MoreDescription":"My journey has been marked by collaboration with clients from diverse industries, each project an opportunity to innovate and excel. My goal is to not just meet, but exceed your expectations, delivering solutions that are as functional as they are visually stunning. Passion drives my work—passion for technology, innovation, and excellence. I pride myself on understanding the unique needs of my clients and transforming their visions into reality with precision and dedication. Explore my portfolio to see the breadth and depth of my work. Let's connect and discuss how we can bring your digital aspirations to life. Together, we can build something truly remarkable!",
+        "Specialities":[
+            {
+                "Name":"Passionate .NET Developer",
+                "Descriptions":"Bringing creative and technical expertise to every project.",
+                "IconClass":""
+            },
+            {
+                "Name":"Diverse Experience",
+                "Descriptions":"Worked with clients across various industries, delivering innovative digital solutions.",
+                "IconClass":""
+            },
+            {
+                "Name":"Comprehensive Skill Set",
+                "Descriptions":"Specializing in web design, web development, custom software, application development, information management, and cloud computing.",
+                "IconClass":""
+            },
+            {
+                "Name":"Innovative Solutions",
+                "Descriptions":"Combining design and technology to create seamless user experiences and efficient processes.",
+                "IconClass":""
+            },
+            {
+                "Name":"Collaborative Process",
+                "Descriptions":"Working closely with clients to transform their visions into reality.",
+                "IconClass":""
+            }
+        ],
+        "Skill":[
+            {
+                "id":1,
+                "Name":"C#",
+                "Percentage":"100"
+            },
+            {
+                "id":2,
+                "Name":"Asp.Net MVC & Asp.Net WebAPI",
+                "Percentage":"90"
+            },
+            {
+                "id":3,
+                "Name":"Asp.Net Core",
+                "Percentage":"80"
+            },
+            {
+                "id":4,
+                "Name":"JavaScript & JQuery",
+                "Percentage":"80"
+            },
+            {
+                "id":5,
+                "Name":"HTML & CSS",
+                "Percentage":"70"
+            },
+            {
+                "id":6,
+                "Name":"Database SQL Server",
+                "Percentage":"85"
+            },
+            {
+                "id":7,
+                "Name":"OOPS",
+                "Percentage":"90"
+            }
+        ]
+    },
+    "Features":{
+        "Name":"",
+        "Descriptions":""
+    }
+}

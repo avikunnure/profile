@@ -1,81 +1,49 @@
-import React, { Component } from 'react'
-
+import React, { Component } from 'react';
 export default class Aboutsus extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      webdata:{
+        Aboutus:{
+        Descriptions:"",
+        MoreDescription:"",
+        Specialities:[]
+      }
+    },
+    };
+  }
+  async componentDidMount() {
+    var response = await fetch('profile/webdata.json');
+    const data = await response.json();
+    this.setState({ webdata: data });
+}
   render() {
     return (
-      <div>
-         <div className='row'>
-          <div className="card">
-            <div className='card-title'>
-            <h1 className="display-1 text-primary fw-bold" >About me.</h1>
-            </div>
-            <div className="card-body">
-              </div>
-
-          </div>
-        </div>
-
-        
-        <div className='row'>
-
-<div className="card">
-  <div className='card-title'><div className="fw-bold">Skills</div></div>
-  <div className="card-body">
-    <ul className="list-group">
-      <li className="list-group-item">
-      </li>
-      <li className="list-group-item">
-        <div className="ms-2 me-auto">
-          <div className="fw-bold">C#</div>
-          <div className="progress">
-            <div className="progress-bar progress-bar-striped progress-bar-animated" 
-              role="progressbar" style={{width: "93%"}}  
-              aria-valuenow="10" aria-valuemin="0" 
-              aria-valuemax="100"></div>
-          </div>
-        </div>
-      </li>
-      <li className="list-group-item">
-        <div className="ms-2 me-auto">
-          <div className="fw-bold">MVC WEBAPI DOTNET CORE</div>
-          <div className="progress">
-            <div className="progress-bar progress-bar-striped progress-bar-animated" 
-              role="progressbar" style={{width: "90%"}}  
-              aria-valuenow="10" aria-valuemin="0" 
-              aria-valuemax="100"></div>
-          </div>
-        </div>
-      </li>
-      <li className="list-group-item">
-        <div className="ms-2 me-auto">
-          <div className="fw-bold">DATABASE</div>
-          <div className="progress">
-            <div className="progress-bar progress-bar-striped progress-bar-animated" 
-              role="progressbar" style={{width: "80%"}}  
-              aria-valuenow="10" aria-valuemin="0" 
-              aria-valuemax="100"></div>
-          </div>
-        </div>
-      </li>
-      <li className="list-group-item">
-        <div className="ms-2 me-auto">
-          <div className="fw-bold">HTML CSS JAVASCRIPT JQUERY</div>
-          <div className="progress">
-            <div className="progress-bar progress-bar-striped progress-bar-animated" 
-              role="progressbar" style={{width: "75%"}}  
-              aria-valuenow="10" aria-valuemin="0" 
-              aria-valuemax="100"></div>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
-
-  
-</div>
-
+    <section id="about" className="about section">
+      <div className="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Who we are</p>
       </div>
+      <div className="container">
+        <div className="row gy-4">
+          <div className="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              {typeof this.state.webdata!="undefined" ? this.state.webdata.Aboutus.Descriptions:""}
+            </p>
+            <ul className='text-start' style={{listStyle: "none"}}>
+            {this.state.webdata.Aboutus.Specialities.map((value, index) => {
+              return <li key={index}><i className="bi bi-check2-circle"></i> <span><b>{value.Name}</b>:{value.Descriptions}</span></li>
+            })}
+            </ul>
+          </div>
+
+          <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <p>{typeof this.state.webdata!="undefined" ? this.state.webdata.Aboutus.MoreDescription:""} </p>
+            <a href="#" className="read-more"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
     )
   }
 }
